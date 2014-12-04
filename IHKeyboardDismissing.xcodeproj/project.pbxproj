@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5B4F7C1A310B8600EBAD14 /* IHKeyboardDismissing */,
-				4C5B4F801A310B8C00EBAD14 /* IHKeyboardAvoidingDemo */,
+				4C5B4F801A310B8C00EBAD14 /* IHKeyboardDismissingDemo */,
 				4C5B4F951A310C7700EBAD14 /* Supporting Files */,
 				4C5B4F4E1A310AD300EBAD14 /* Products */,
 			);
@@ -77,7 +77,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		4C5B4F801A310B8C00EBAD14 /* IHKeyboardAvoidingDemo */ = {
+		4C5B4F801A310B8C00EBAD14 /* IHKeyboardDismissingDemo */ = {
 			isa = PBXGroup;
 			children = (
 				4C5B4F811A310B8C00EBAD14 /* AppDelegate.h */,
@@ -89,7 +89,7 @@
 				4C5B4F8B1A310B8C00EBAD14 /* ViewController.m */,
 				4C11DA651A31105B005EB8F3 /* diamond_upholstery@2x.png */,
 			);
-			name = IHKeyboardAvoidingDemo;
+			name = IHKeyboardDismissingDemo;
 			path = Example;
 			sourceTree = SOURCE_ROOT;
 		};

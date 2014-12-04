@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IHKeyboardDismissing'
-  s.version          = '0.1'
+  s.version          = '1.0'
   s.summary          = 'IHKeyboardDismissing is a custom view that, when tapped, will dismiss the keyboard'
   s.homepage         = 'https://github.com/IdleHandsApps/IHKeyboardDismissing/'
   s.description      = <<-DESC
