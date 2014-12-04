@@ -18,4 +18,6 @@
 
 @property (nonatomic, weak) NSObject <IHKeyboardDismissingDelegate> *delegate;
 
++ (BOOL)resignAnyFirstResponder:(UIView *)view;
+
 @end
