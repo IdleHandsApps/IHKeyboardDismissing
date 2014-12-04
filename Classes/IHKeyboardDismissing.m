@@ -1,14 +1,14 @@
 //
-//  IHResignResponderView.m
+//  IHKeyboardDismissing.m
 //  Idle Hands Apps
 //
 //  Created by Fraser Scott-Morrison on 30/05/14.
 //  Copyright (c) 2014 Idle Hands Apps Ltd. All rights reserved.
 //
 
-#import "IHResignResponderView.h"
+#import "IHKeyboardDismissing.h"
 
-@implementation IHResignResponderView
+@implementation IHKeyboardDismissing
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -21,7 +21,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-    BOOL hasResigned = [IHResignResponderView resignAnyFirstResponder:self];
+    BOOL hasResigned = [IHKeyboardDismissing resignAnyFirstResponder:self];
     
     if (self.delegate && hasResigned) {
         [self.delegate hasResignedAResponder];
@@ -41,7 +41,7 @@
             break;
         }
         else {
-            hasResigned = [IHResignResponderView resignAnyFirstResponder:subView] || hasResigned;
+            hasResigned = [IHKeyboardDismissing resignAnyFirstResponder:subView] || hasResigned;
         }
     }
     return hasResigned;

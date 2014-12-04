@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="IHKeyboardDismissing">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-HL-zFe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap TextField to show keyboard" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVw-QP-C4I">
+                                <rect key="frame" x="179" y="150" width="241" height="30"/>
+                                <color key="backgroundColor" red="0.90196084980000002" green="0.96078437569999997" blue="0.97647064920000004" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="oet-iZ-BIP"/>
+                                    <constraint firstAttribute="height" constant="30" id="xQS-k6-Efr"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere else to dismiss the keyboard" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qk-ea-Gph">
+                                <rect key="frame" x="210" y="277" width="179" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="4BG-jk-dbb"/>
+                                    <constraint firstAttribute="width" constant="179" id="beU-ke-rxr"/>
+                                    <constraint firstAttribute="height" constant="46" id="jDQ-dF-Z1d"/>
+                                    <constraint firstAttribute="width" constant="179" id="lmm-jK-PQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jDQ-dF-Z1d"/>
+                                        <exclude reference="lmm-jK-PQM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vVw-QP-C4I" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="130" id="4dA-O5-D0s"/>
+                            <constraint firstAttribute="centerY" secondItem="vVw-QP-C4I" secondAttribute="centerY" id="D75-Ch-8h9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tl2-HL-zFe" secondAttribute="trailing" constant="-16" id="LS6-2v-04y"/>
+                            <constraint firstItem="tl2-HL-zFe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="UtV-iq-u5c"/>
+                            <constraint firstItem="tl2-HL-zFe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ZA2-TA-8vx"/>
+                            <constraint firstAttribute="centerX" secondItem="vVw-QP-C4I" secondAttribute="centerX" id="h6h-qi-H3x"/>
+                            <constraint firstAttribute="centerX" secondItem="1qk-ea-Gph" secondAttribute="centerX" id="kvm-wc-xYR"/>
+                            <constraint firstItem="1qk-ea-Gph" firstAttribute="top" secondItem="vVw-QP-C4I" secondAttribute="bottom" constant="97" id="rwz-Qx-c8p"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tl2-HL-zFe" secondAttribute="bottom" id="vTs-Ot-anZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="D75-Ch-8h9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="tl2-HL-zFe" id="vKP-aw-Iaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,5 +1,5 @@
 //
-//  IHResignResponderView.h
+//  IHKeyboardDismissing.h
 //  Idle Hands Apps
 //
 //  Created by Fraser Scott-Morrison on 30/05/14.
@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol IHResignResponderDelegate <NSObject>
+@protocol IHKeyboardDismissingDelegate <NSObject>
 
 - (void)hasResignedAResponder;
 
 @end
 
-@interface IHResignResponderView : UIView
+@interface IHKeyboardDismissing : UIView
 
-@property (nonatomic, weak) NSObject <IHResignResponderDelegate> *delegate;
+@property (nonatomic, weak) NSObject <IHKeyboardDismissingDelegate> *delegate;
 
 @end
